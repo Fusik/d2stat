@@ -1,2 +1,348 @@
 # d2stat
 d2stat
+
+filter
+
+
+//"(Perfect Amethyst|Perfect Topaz|Perfect Sapphire|Perfect Emerald|Perfect Ruby|Perfect Diamond|Perfect Skull|Perfect Onyx|Perfect Bloodstone|Perfect Turquoise|Perfect Amber|Perfect Rainbow Stone)" green
+"^(Ist|Sur|Ber|Jah|Cham|Zod) Rune$"
+
+
+master red sound 3
+Kinzhal red sound 3
+kukri red sound 3
+
+"Ring" {(Skills|([5-9]|10)% to Spell Damage|(1[5-9]|2[0-9]|30) Spell Focus} {([8-9]|1[0-5])% to Poison Spell Damage}{[3-5]% to Enemy Poison Resistance)} 
+"Ring" {(Skills|([5-9]|10)% to Spell Damage|(1[5-9]|2[0-9]|30) Spell Focus} {([8-9]|1[0-5])% to Lightning Spell Damage}{[3-5]% to Enemy Lightning Resistance)} 
+"Ring" {(Skills|([5-9]|10)% to Spell Damage|(1[5-9]|2[0-9]|30) Spell Focus} {([8-9]|1[0-5])% to Cold Spell Damage}{[3-5]% to Enemy Cold Resistance)} 
+"Ring" {(Skills|([5-9]|10)% to Spell Damage|(1[5-9]|2[0-9]|30) Spell Focus} {([8-9]|1[0-5])% to Fire Spell Damage}{[3-5]% to Enemy Fire Resistance)}
+"Ring" {[1-9]% Innate Elemental Damage}
+"Ring" {[1-2] Stri*}
+
+"Amulet$" set {(Skills|([5-9]|10)% to Spell Damage|(1[5-9]|2[0-9]|30) Spell Focus|([8-9]|1[0-5])% to Poison Spell Damage|[3-5]% to Enemy Poison Resistance)} 
+
+"Amulet$"  {([2-6] Skills|([5-9]|10)% to Spell Damage|(1[5-9]|2[0-9]|30) Spell Focus|([8-9]|1[0-5])% to Spell Damage|[3-5]% to Enemy$)} 
+
+set name
+unique name
+"Wrist Blade" {Assassin} rare sacred  red sound1
+"Scissors Katar" {Assassin} rare sacred  red sound1
+"Blade Talons" {Assassin} rare sacred  red sound1
+"Katar" {Assassin} rare sacred  red sound1
+
+
+"Signet of Learning"
+"Greater Signet"
+"Emblem"
+"Trophy"
+"Sunless"
+"Angel Bag"
+"Cycle" SOUND4
+"Enchanting"
+"Wings"
+"Dimensional Key"
+"Occult Effigy"
+"Mystic Dye"
+"Treasure"
+"Item Design"
+"Mystic Dye"
+"Belladonna"
+"Enchanted Rune" sound4
+"Relic" {.} sound3
+"Mystic Dye"
+"Soulforged Mystic Orb" {.}
+"Book of Cain"
+"Oil of (Conjuration|Augmentation|Greater Luck|Intensity)" sound4
+"Positronic Brain"
+"Occult Effigy"{.} purple
+"Reagent"
+"Arcane (Shard|Crystal)"
+"Mastercrafted" sound6
+"Heavenly Soul"
+
+#Quest items
+"Ring of the Five"
+"Signet of Skill"
+"Tome of Possession"
+"Sigil$" sound4
+"Dimensional Link"
+"Key of Lies"
+"Key of Sin"
+"Askari Call" 
+"Tenet" sound4
+"Riftstone" sound4
+"Fragment"
+"Star Chart" sound4
+"Otherworldly Link"
+"Damned" sound4
+"Scroll of Summoning"
+
+1 2 3 4 unique               # Tiered uniques
+sacred unique                # Sacred uniques
+"Ring$|Amulet$|Jewel" unique # Unique jewelry
+"Runestone|Essence$"         # Teganze runes
+"Great Rune"                 # Great runes
+"Orb\|"                      # UMOs
+"Shrine \(10"                # Shrines
+
+
+
+#Quiver with procs + class skill/oskill
+"Quiver" rare {.}
+"Quiver" unique
+
+#Angelic items with skills and weapons with damage
+"\(Angelic\)" eth
+"Scepter \(Angelic\)" {6 to All Skills} rare purple
+"Shield \(Angelic\)" {[4-5] to All Skills} rare purple
+"Full Helm \(Angelic\)" {[3-4] to All Skills} rare purple
+"Gauntlets \(Angelic\)" {[3-4] to All Skills} rare purple
+"(Belt|Boots) \(Angelic\)" {[2-3] to All Skills} rare purple
+"(Belt|Boots) \(Angelic\)" {Damag*} rare purple
+"Light Plate \(Angelic\)" {([4-6]) to All Skills| All Stat*} rare purple
+"Long Staff \(Angelic\)" {[6-12] to All Skills} rare purple
+"Trident \(Angelic\)" {[6-9] to All Skills} rare purple
+"(War Sword|Morning Star|Military Pick|Dagger) \(Angelic\)" {(1[3-9][0-9] to Minimum|2[2-9][0-9] to Maximum)} purple
+"(Crossbow|Large Axe|Trident) \(Angelic\)" {((1[8-9][0-9]|2[0-9][0-9]) to Minimum|[3-4][0-9][0-9] to Maximum|9 o All Skills)} purple
+"(Giant Sword|Battle Staff) \(Angelic\)" {((1[8-9][0-9]|2[0-9][0-9]) to Minimum|3[0-9][0-9] to Maximum)} purple
+"Crossbow \(Angelic\)" {.} 
+
+#Rift charms with good rolls
+"Visions of Akarat" {(250|24[0-9])} {25 to all} purple
+"Spirit Trance Herb" {(150|14[0-9])} purple #!!!!! D2stats can't see life regen in spirit trance, you have to look for perf life manually
+"Zakarum's Ear" {10}{1[3-5]} purple
+"Hammer of the Taan Judges" {25 Spell} purple
+"Cold Fusion Schematics" {(30|2[6-9]) to Vita} {(30|2[6-9])} purple
+"Cold Fusion Schematics" {(30|2[4-9])} {(30|2[4-9])} {(30|2[4-9])} {(30|2[4-9])}purple
+"Soul Of Kabraxis" {.}
+"The Sleep" {.}
+
+
+"Angel of Death" {Skills}
+
+
+"Sash" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([2]\)}
+"Light Belt" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([2]\)}
+"Belt" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([2]\)}
+"Heavy Belt" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([2]\)}
+"Plated Belt" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([2]\)}
+
+"Cap" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Skull Cap" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Helm" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Full Helm" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Great Helm" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Crown" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Circlet" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Coronet" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Tiara" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Diadem" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Mask" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Bone Helm" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Buckler" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Small Shield" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Large Shield" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Kite Shield" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Leather Gloves" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Heavy Gloves" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Chain Gloves" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Light Gauntlets" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Gauntlets" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Boots" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Heavy Boots" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Chain Boots" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Light Plated Boots" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Greaves" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Morion" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Cervelliere" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Einherjar Helm" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Spangenhelm" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Athulua's Hand" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Parma" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Aspis" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Jawbone Cap" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Fanged Helm" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Horned Helm" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Assault Helmet" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Avenger Guard" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Bronze Shield" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Gilded Shield" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Wolf Head" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Hawk Helm" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Antlers" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Falcon Mask" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Spirit Mask" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Preserved Head" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Zombie Head" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Unraveller Head" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Gargoyle Head" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Demon Head" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Hundsgugel" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Blackguard Helm" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Targe" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Rondache" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+"Crown Shield" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([4]\)}
+
+"Quilted Armor" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([6]\)}
+"Leather Armor" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([6]\)}
+"Hard Leather Armor" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([6]\)}
+"Studded Leather" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([6]\)}
+"Ring Mail" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([6]\)}
+"Scale Mail" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([6]\)}
+"Chain Mail" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([6]\)}
+"Breast Plate" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([6]\)}
+"Splint Mail" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([6]\)}
+"Plate Mail" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([6]\)}
+"Field Plate" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([6]\)}
+"Light Plate" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([6]\)}
+"Gothic Plate" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([6]\)}
+"Full Plate Mai" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([6]\)}
+"Ancient Armor" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([6]\)}
+"Tower Shield" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([6]\)}
+"Gothic Shield" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([6]\)}
+"Bone Shield" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([6]\)}
+"Spiked Shield" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([6]\)}
+"Phoenix Shield" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([6]\)}
+"Setzschild" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([6]\)}
+"Totem Shield" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([6]\)}
+"Bladed Shield" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([6]\)}
+"Bull Shield" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([6]\)}
+"Heraldic Shield" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([6]\)}
+"Aerin Shield" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([6]\)}
+"Gambeson" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([6]\)}
+"Kazarghand" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([6]\)}
+"Lamellar Armor" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([6]\)}
+"Banded Plate" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([6]\)}
+"Ceremonial Armor" sacred eth {([4-9][0-9])% Enh*} {Phys*}{socketed \([6]\)}
+
+#WEAPON
+
+"Dagger" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([2]\)}
+"Dirk" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([2]\)}
+"Throwing Knife" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([2]\)}
+"Flying Knife" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([2]\)}
+"Balanced Knife" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([2]\)}
+"Throwing Axe" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([2]\)}
+
+"Short Sword" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([3]\)}
+"Scimitar" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([3]\)}
+"Saber" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([3]\)}
+"Falchion" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([3]\)}
+"War Sword" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([3]\)}
+"Hand Axe" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([3]\)}
+"Club" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([3]\)}
+"Spiked Club" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([3]\)}
+"Mace" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([3]\)}
+"Morning Star" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([3]\)}
+"Scepter" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([3]\)}
+"Grand Scepter" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([3]\)}
+"War Scepter" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([3]\)}
+"Javelin" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([3]\)}
+"Pilum" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([3]\)}
+"Short Spear" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([3]\)}
+"Kriss" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([3]\)}
+"Blade" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([3]\)}
+"Short Staff" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([3]\)}
+"Maiden Javelin" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([3]\)}
+"Katar" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([3]\)}
+
+"Hatchet Hands" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([3]\)}
+"Cestus" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([3]\)}
+"Claws" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([3]\)}
+"Blade Talons" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([3]\)}
+"Scissors Katar" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([3]\)}
+"Spatha" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([3]\)}
+"Backsword" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([3]\)}
+"Ida" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([3]\)}
+"Bronze Sword" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([3]\)}
+"Kriegsmesser" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([3]\)}
+"Spirit Edge" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([3]\)}
+"Bonebreaker" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([3]\)}
+"Goedendag" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([3]\)}
+"Angel Star" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([3]\)}
+
+"Two-Handed Sword" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([4]\)}
+"Claymore" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([4]\)}
+"Giant Sword" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([4]\)}
+"Bastard Sword" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([4]\)}
+"Glaive" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([4]\)}
+"Throwing Spear" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([4]\)}
+"Long Staff" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([4]\)}
+"Gnarled Staff" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([4]\)}
+"Battle Staff" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([4]\)}
+"Flamen Staff" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([4]\)}
+
+"Broad Sword" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Long Sword" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Flamberge" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Great Sword" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Axe" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Double Axe" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Military Pick" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"War Axe" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Large Axe" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Broad Axe" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Battle Axe" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Great Axe" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Giant Axe" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Flail" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"War Hammer" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Maul" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Great Maul" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Spear" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Trident" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Brandistock" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Spetum" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Pike" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Scythe" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Balanced Axe" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"War Staff" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Short Bow" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Hunter's Bow" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Long Bow" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Composite Bow" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Short Battle Bow" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Long Battle Bow" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Long War Bow" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Light Crossbow" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Crossbow" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Heavy Crossbow" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Repeating Crossbow" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Reflex Bow" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Maiden Spear" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Maiden Pike" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Halberd" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Naginata" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Hammerhead Axe" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Valaska" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Labrys" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Compound Bow" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Serpent Bow" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Viper Bow" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Recurve Bow" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Raptor Scythe" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Bonesplitter" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Marrow Staff" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Dart Thrower" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Stinger Crossbow" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Trebuchet" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Hand of God" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Holy Lance" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Tepoztopilli" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+"Warp Blade" sacred eth {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
