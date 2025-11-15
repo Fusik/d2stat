@@ -3,9 +3,9 @@
 "^(Ist|Sur|Ber|Jah|Cham|Zod) Rune$"
 
 
-master red sound 3
-Kinzhal red sound 3
-kukri red sound 3
+master red sound3
+Kinzhal red sound3
+kukri red sound3
 
 "Ring" {(Skills|([5-9]|10)% to Spell Damage|(1[5-9]|2[0-9]|30) Spell Focus} {([8-9]|1[0-5])% to Poison Spell Damage}{[3-5]% to Enemy Poison Resistance)} 
 "Ring" {(Skills|([5-9]|10)% to Spell Damage|(1[5-9]|2[0-9]|30) Spell Focus} {([8-9]|1[0-5])% to Lightning Spell Damage}{[3-5]% to Enemy Lightning Resistance)} 
@@ -537,6 +537,7 @@ sacred unique                # Sacred uniques
 "Holy Lance" sacred {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
 "Tepoztopilli" sacred {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
 "Warp Blade" sacred {([4-9][0-9])% Enh*} {([7-9][0-9])%|100 Bonus*}{socketed \([6]\)}
+
 
 
 
